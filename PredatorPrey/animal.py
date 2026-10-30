@@ -35,9 +35,10 @@ class Animal:
         """
 
         offset = [(-1, 1), (0, 1), (1, 1), (-1, 0), (1, 0), (-1, -1), (0, -1), (1, -1)]
+        random.shuffle(offset)  # Randomize the offset
         result = Animal.NOT_FOUND
 
-        for dx, dy in random.shuffle(offset): # Offset is randomized
+        for dx, dy in offset:
             x = self._x + dx
             y = self._y + dy
             if self._island.inside(x, y):  # Then the location is inside the island
