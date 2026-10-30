@@ -1,3 +1,4 @@
+import random
 from island import Island
 
 
@@ -34,6 +35,7 @@ class Animal:
         """
 
         offset = [(-1, 1), (0, 1), (1, 1), (-1, 0), (1, 0), (-1, -1), (0, -1), (1, -1)]
+        random.shuffle(offset)  # Randomize the offset
         result = Animal.NOT_FOUND
 
         for dx, dy in offset:
