@@ -86,3 +86,5 @@ class Animal:
                     # Create an instance of a new animal
                     new_animal = the_class(self._island, x=location[0], y=location[1])
                     self._island.register(new_animal)
+                else:
+                    break
