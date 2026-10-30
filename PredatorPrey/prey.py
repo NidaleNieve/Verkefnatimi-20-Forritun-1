@@ -3,4 +3,8 @@ from animal import Animal
 
 class Prey(Animal):
     def __init__(self, island, x=0, y=0, name="O"):
-        Animal.__init__(self, island, x, y, name)
+        Animal.__init__(self, island, x, y, name)    
+
+    # Easily breed two instances of prey
+    def breed(self): 
+        super().breed(2) 
