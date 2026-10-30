@@ -1,1 +1,2 @@
-this is the remote version
+NEW local version COOL!
+NEW remote version WOW!
