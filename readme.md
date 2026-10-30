@@ -1,1 +1,1 @@
-NEW remote version COOL!
+NEW local version COOL!
