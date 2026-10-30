@@ -1,3 +1,4 @@
+import random
 from island import Island
 
 
@@ -36,7 +37,7 @@ class Animal:
         offset = [(-1, 1), (0, 1), (1, 1), (-1, 0), (1, 0), (-1, -1), (0, -1), (1, -1)]
         result = Animal.NOT_FOUND
 
-        for dx, dy in offset:
+        for dx, dy in random.shuffle(offset): # Offset is randomized
             x = self._x + dx
             y = self._y + dy
             if self._island.inside(x, y):  # Then the location is inside the island
